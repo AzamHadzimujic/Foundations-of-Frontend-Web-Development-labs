@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form method="post" action="">
+        <h1>IT Center Ticket Form</h1>
+        <label for="problem">Type of Problem: </label>
+        <select id="problem" name="problem">
+            <option value="Help_and_Guidance" selected>Help & Guidance</option>
+            <option value="CV_Creator_Tool">CV Creator Tool</option>
+            <option value="Data_Privacy_Concerns">Data Privacy Concerns</option>
+            <option value="File_upload_issue">File upload issues</option>
+        </select><br><br>
+        <label for="urgency">Select Urgency:</label><br>
+        <input id="urgency" name="urgency" type="radio">Not urgent<br>
+        <input id="urgency" name="urgency" type="radio" checked>Mild<br>
+        <input id="urgency" name="urgency" type="radio">Highly Urgent<br><br>
+        <label for="picture">Upload a Picture (JPG, JPEG,PNG): </label>
+        <input id="picture" name="picture" type="file"><br><br>
+        <input name="submit" type="submit">
+    </form>
+</body>
+</html>
