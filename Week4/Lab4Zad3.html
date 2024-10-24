@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1 {
+width: 400px;
+height: 220px;
+border: 2px solid black;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+</style>
+<script>
+function allowDrop(ev) {
+ev.preventDefault();
+}
+function drag(ev) {
+ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+ev.preventDefault();
+var data = ev.dataTransfer.getData("text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<h2>Drag and Drop the Skills</h2>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+<!-- Drop area -->
+</div>
+<p draggable="true" id="HTML">HTML</p>
+<p draggable="true" id="CSS">CSS</p>
+<p draggable="true" id="JS">JavaScript</p>
+</body>
+</html>
+

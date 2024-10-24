@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <header><b>Azam Hadzimujic</b></header>
+    <img src="Mountain.jpg" width="100px" height="100px"></img>
+    <nav>
+    <ul> 
+        <li><a href="#about">About Me</a></li> 
+        <li><a href="#experience">Experience</a></li> 
+        <li><a href="#skills">Skills</a></li> 
+    </ul>
+    </nav>
+    <hr>
+    <article><h2>Introduction</h2>
+    <p>Hello everybody! My name is <b>Azam Hadzimujic</b>. I am a <i>First year</i> student at the IT Department on IBU.<br>
+        I have a strong background in youth activism and in doing projects for my local neighborhoods.
+    </p>
+    </article>
+    <hr>
+        <h2>Hobbies</h2>
+        <p>My hobbies are:
+            <ul>
+                <li>Playing games</li>
+                <li>Listening to music</li>
+                <li>Studying my classes at the uni</li>
+                <li>Climbing mountains</li>
+            </ul>
+        </p>
+    <hr>
+    <h2>Education and Certifications</h2>
+    <p>
+        <ol type="A">
+            <li>Elementary School in Doboj</li>
+            <li>Gymnasium in Doboj</li>
+            <li>Electrical Engineering Faculty in Sarajevo</li>
+            <li>Internation Burch University in Sarajevo</li>
+        </ol>
+    </p>
+    <hr>
+    <p>
+        Projects I have done in my local town of Doboj:<br>
+        <pre>Redesigned the school libary.
+
+Started a recycle plastic program to recycle plastic waste.
+
+Installed new roadbumps to ensure safety driving around school areas.
+        </pre>
+    </p>
+    <hr>
+    <h4>My favorite quote, LinkedIn and Personal Information</h4>
+    <p>
+        My favorite quote is:<br><q><cite>The greatest glory in living lies not in never falling, but in rising every time we fall.</cite>
+        </q> - Nelson Mandela.
+    <br><br>My LinkedIn profile is available under this link: 
+    <a href="https://www.linkedin.com/in/azam-hadzimujic-179301257/" target="_blank" title="My LinkedIn">LinkedIn</a>
+    <br><br><dl>My address is: <dd><address>Bulevar Ivice Osima 23, 71000 Sarajevo, BiH</address></dd>
+    <br>My email address is: <dd><bdo dir="rtl">ab.ude.ubi.uts@cijumizdah.maza</bdo></dd>
+    </dl>
+    </p>
+    <footer><p>2024 Azam Hadzimujic</p></footer>
+    <br><br>
+    <form id="userForm">
+        <label for="firstName">Your First Name:</label>
+        <input id="firstName" type="text" name="firstName"><br>
+        <label for="last_name">Your Last Name:</label>
+        <input id="last_name" type="text" name="last_name"><br>
+        <label for="job_title">Job Title:</label>
+        <input id="job_title" name="job_title" type="text"><br>
+        <input id="submit" type="submit">
+    </form>
+    <p id="result"></p> 
+
+<script> 
+document.getElementById("userForm").addEventListener("submit", function(event){ 
+event.preventDefault(); 
+const firstName = document.getElementById("firstName").value;
+const last_name = document.getElementbyId("last_name").value;
+const job_title = document.getElementbyId("job_title").value;
+localStorage.setItem("firstName", firstName); document.getElementById("result").innerText = `Hello, ${firstName}`; this.reset();
+localStorage.setItem("last_name", last_name); document.getElementById("result").innerText = `${last_name}`; this.reset();
+localStorage.setItem("job_title", job_title); document.getElementById("result").innerText = `${job_title}!`; this.reset(); });
+</script>
+
+</body>
+</html>
