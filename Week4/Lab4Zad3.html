@@ -29,9 +29,9 @@ ev.target.appendChild(document.getElementById(data));
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
 <!-- Drop area -->
 </div>
-<p draggable="true" id="HTML">HTML</p>
-<p draggable="true" id="CSS">CSS</p>
-<p draggable="true" id="JS">JavaScript</p>
+<p draggable="true" id="HTML" ondragstart=drag(event)>HTML</p>
+<p draggable="true" id="CSS" ondragstart=drag(event)>CSS</p>
+<p draggable="true" id="JS" ondragstart=drag(event)>JavaScript</p>
 </body>
 </html>
 
