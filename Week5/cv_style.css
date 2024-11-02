@@ -1,0 +1,32 @@
+#left{
+    background-color: lightskyblue;
+    width: 40%;
+    padding-right: 10px;
+    border: solid pink;  
+}
+#right{
+    background-color: whitesmoke;
+    width: 60%;
+    padding-left: 10px;
+    border: solid violet;
+}
+body{
+    display:flex;
+    flex-direction: row-reverse
+}
+#h4{
+    text-decoration: underline;
+}
+#cite{
+    font-weight: bold;
+}
+a:link{
+    color:blue;
+}
+a:visited{
+    color:purple;
+}
+ul{
+    text-decoration: underline;
+    word-spacing: 0.5em;
+}
